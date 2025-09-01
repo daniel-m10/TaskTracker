@@ -1,0 +1,30 @@
+# .NET build and VS files
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results and coverage
+TestResults/
+*.coverage
+*.coveragexml
+*.cobertura.xml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tool configs
+.config/
+
+# Logs
+*.log
+
+# Other
+*.swp
+*.tmp
