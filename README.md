@@ -25,17 +25,38 @@ TaskTracker.Tests/             # Unit tests for all layers
 
 ## How to Run
 
-1. Build the solution:
+1. Run all unit tests:
 
    ```sh
-   dotnet build
+   dotnet test
    ```
 
-2. Run the CLI:
+2. Generate code coverage:
 
    ```sh
-   dotnet run --project TaskTracker.CLI
+   dotnet test --collect:"XPlat Code Coverage"
    ```
+
+3. View coverage with VS Code Coverage Gutters or ReportGenerator.
+
+## Continuous Integration (CI)
+
+This project uses GitHub Actions to automatically build and test all code on every push and pull request. The workflow is defined in `.github/workflows/ci.yml` and includes:
+
+- Restoring dependencies
+- Building the solution
+- Running all unit tests
+- Collecting code coverage
+
+You can view the status of your builds and tests on the GitHub repository's Actions tab.
+
+## Codespaces & Devcontainer
+
+This project is ready to run in GitHub Codespaces. It includes a `.devcontainer` configuration that sets up a .NET 8 development environment with recommended VS Code extensions. To use:
+
+1. Click the "Code" button in GitHub and select "Open with Codespaces".
+2. Your environment will be automatically set up and dependencies restored.
+3. You can build, run, and test the app as described above.
 
 ## Usage
 
