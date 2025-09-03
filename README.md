@@ -62,13 +62,13 @@ dotnet run --project TaskTracker.CLI -- list
 Update the status of a task (statuses: New, InProgress, Completed, Cancelled):
 
 ```sh
-dotnet run --project TaskTracker.CLI -- update <taskId> Completed
+dotnet run --project TaskTracker.CLI -- update <taskId> -s Completed
 ```
 
 Example:
 
 ```sh
-dotnet run --project TaskTracker.CLI -- update 123e4567-e89b-12d3-a456-426614174000 InProgress
+dotnet run --project TaskTracker.CLI -- update 123e4567-e89b-12d3-a456-426614174000 --status InProgress
 ```
 
 ### Delete a Task
