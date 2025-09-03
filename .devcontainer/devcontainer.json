@@ -1,0 +1,19 @@
+{
+    "name": "TaskTracker Codespace",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+    "features": {},
+    "postCreateCommand": "dotnet restore",
+    "forwardPorts": [],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "editorconfig.editorconfig",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    }
+}
